@@ -1,5 +1,7 @@
 ## SigmaPlot v12.0 with SigMacro v1.1
 
+![SigMacro v1.0 Demo](./SigMacro%20v1.1/SigMacro_v1.0_demo.gif)
+
 ## Prerequisite
 
 ```License file``` and ```Serial Number``` for SigmaPlot v12.0 is required.
@@ -16,7 +18,6 @@
    2. User Configuration Files: `C:\Users\<YOUR_USER_NAME>\Documents\SigmaPlot\SPW12\`
 
 #### SigMacro v1.1
-![SigMacro v1.0 Demo](./SigMacro%20v1.1/SigMacro_v1.0_demo.gif)
 
 SigMacro v1.1 enhances SigmaPlot with additional features:
 
