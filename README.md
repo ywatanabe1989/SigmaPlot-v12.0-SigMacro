@@ -24,7 +24,6 @@ SigMacro v1.1 enhances SigmaPlot with additional features:
 - Macro for Preset Layouts (Figure S, Figure M, and Figure L)
 - Macro for Change color of objects
 - Macro for move the first row data to labels
-- 
 
 #### SigmaPlotConfig Folder
 
