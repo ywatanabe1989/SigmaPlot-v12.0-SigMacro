@@ -1,0 +1,2175 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("footer.css");
+
+/*=================================
+デフォルトスタイルをリセットするための CSS
+=================================*/
+
+dl, dt, dd, h1, h2, h3, h4, h5, h6, p, blockquote, form, fieldset, input, textarea {
+	margin: 0px;
+	padding: 0px;
+	font-family: "メイリオ", "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+}
+
+pre {
+	margin: 0;
+	padding: 0;
+	font-family: "ＭＳ ゴシック", "Osaka－等幅";
+}
+/*====注意：IE7, Firefox で、リストに画像を使用した場合、下記要素にフォントファミリーの指定が
+あると、上に余白ができる。メイリオの高さに関係がある。
+そのため、以下には、フォントファミリーを適用しない。=======*/
+/*	font-family: "メイリオ", "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";*/
+html, body, div
+ {
+	padding: 0;
+	margin: 0;
+}
+/*=================================================*/
+
+body {
+	color: #000;
+	background-color: #ffffff;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+ address, caption, cite, code, var, dfn 
+{
+ font-style: normal;
+ font-weight: normal;
+}
+/*table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}*/
+/*caption, th {
+	text-align: left;
+}*/
+fieldset {
+	border: 0;
+}
+optgroup {
+	color: #000;
+}
+/*ol, ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}*/
+blockquote {
+	font-family: "メイリオ", "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	text-indent: 1em;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 2px;
+	color: #666666;
+}
+abbr, acronym {
+	border: 0;
+	cursor: help;
+}
+img {
+	border: 0px;
+	vertical-align: bottom;
+	margin: 0px;
+	padding: 0px;
+}
+object, embed {
+	vertical-align: bottom;
+}
+/*hr {
+	display: none;
+}*/
+/*a {
+	text-decoration: none;
+}*/
+
+
+/*==========Head=================*/
+
+
+
+/*==========Category=================*/
+#category_topic_path {
+	float: left;
+	width: 97%;
+	background-color: #FFFFFF;
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size: 11px;
+	line-height: 130%;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	margin: 0px;
+}
+
+
+/*==========Footer =================*/
+
+/*
+#foot {
+	width: auto;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-left: auto;
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size: 13px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+}
+*/
+
+/*==========本文=================*/
+h1 {
+	font-family: "VL Pゴシック", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size: 150%;
+	font-weight: bold;
+	padding-bottom: 0.4em;
+	padding-top: 0.4em;
+	margin-top: 0em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+	margin-left: 0.4em;
+}
+h2 {
+	font-family: "VL Pゴシック", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size: 110%;
+	font-weight: bold;
+	padding-bottom: 0.4em;
+	padding-top: 0.4em;
+	margin-top: 0em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+	margin-left: 0.4em;
+}
+h3 {
+	font-family: "VL Pゴシック", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size: 90%;
+	font-weight: bold;
+	line-height: 130%;
+	padding-bottom: 0.4em;
+	padding-top: 0.4em;
+	margin-top: 0em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+	margin-left: 0.4em;
+}
+p {
+	font-family: "VL Pゴシック",'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size: 90%;
+	line-height: 130%;
+	text-indent: 1em;
+	padding-bottom: 0.4em;
+	padding-top: 0.4em;
+	margin-top: 0em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+	margin-left: 0.4em;
+}
+
+ul {
+	padding-bottom: 0.4em;
+	padding-top: 0.4em;
+	margin-top: 0em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+/*	margin-left: 2em;*/
+}
+
+ol {
+	padding-bottom: 0.4em;
+	padding-top: 0.4em;
+	margin-top: 0em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+/*	margin-left: 2em;*/
+}
+
+li {
+	font-size: 90%;
+	line-height: 140%;
+	font-family:  "VL Pゴシック", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+caption {
+	font-family: "VL Pゴシック", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size: 75%;
+	line-height: 120%;
+	color: #666666;
+	text-align: center;
+	padding: 2px;
+}
+
+/*==========コード=================*/
+.code_a {
+	font-family: "Courier New", Courier, mono;
+	font-size: 90%;
+	background-color: #EEEEEE;
+	line-height: 130%;
+	padding: 0.5em;
+	border: 1px solid #6699CC;
+	overflow: scroll;
+}
+
+.code_a2 {
+	font-family: "ＭＳ ゴシック", "Osaka－等幅";
+	font-size: 90%;
+	background-color: #EEEEEE;
+	line-height: 130%;
+	padding: 0.5em;
+	border: 1px solid #6699CC;
+	overflow: scroll;
+}
+
+.code_b {
+	font-family: "Courier New", Courier, mono;
+	font-size: 90%;
+	background-color: #000000;
+	line-height: 130%;
+	padding: 0.5em;
+	border: 1px solid #6699CC;
+	overflow: scroll;
+	color: #FFFFFF;
+}
+
+.code_b2 {
+	font-family: "ＭＳ ゴシック", "Osaka－等幅";
+	font-size: 90%;
+	background-color: #000000;
+	line-height: 130%;
+	padding: 0.5em;
+	border: 1px solid #6699CC;
+	overflow: scroll;
+	color: #FFFFFF;
+}
+
+/*==========画像の配置（クラス）=================*/
+.img_align_right {
+	float: right;
+	margin: 8px;
+}
+.img_align_left {
+	float: left;
+	margin: 8px;
+}
+.img_space {
+	margin: 8px;
+}
+
+/*==========画像の配置（クラス）=================*/
+.hint {
+	border: 2px dotted #999999;
+	padding: 4px;
+	margin-top: 1em;
+	margin-right: 4em;
+	margin-bottom: 1em;
+	margin-left: 4em;
+	font-family: "VL Pゴシック", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size: 80%;
+}
+.message {
+	border: 2px solid #999999;
+	padding: 4px;
+	margin-top: 1em;
+	margin-right: 4em;
+	margin-bottom: 1em;
+	margin-left: 4em;
+	font-family: "VL Pゴシック", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size: 80%;
+}
+.message_left {
+	border: 2px solid #999999;
+	padding: 4px;
+	margin-top: 1em;
+	margin-right: 4em;
+	margin-bottom: 1em;
+	font-family: "VL Pゴシック", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size: 80%;
+}
+.special {
+	border: 2px dotted #999999;
+	padding: 4px;
+	margin-top: 1em;
+	margin-right: 2em;
+	margin-bottom: 1em;
+	margin-left: 2em;
+	font-family: "VL Pゴシック", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size: medium;
+}
+/*==========終わり=================*/
+
+
+
+#goback {
+	font-size: 90%;
+	line-height: 130%;
+	font-family:  "VL Pゴシック", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	text-align: center;
+	padding: 0.5em;
+}
+
+#contents #contents_menu #pickup {
+	font-size: 8pt;
+	line-height: 130%;
+	text-align: center;
+	margin-top: 8px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	margin-left: 2px;
+	font-family: "VL Pゴシック", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+.tableborder_outset {border:1px outset #CCCCCC;}
+.tableborder_solid {border:1px solid #CCCCCC;}
+.tableborder_dashed {border:1px dashed #CCCCCC;}
+.tableborder_dotted {border:1px dotted #CCCCCC;}
+.tableborder_double {border:1px double #CCCCCC;}
+
+.tableborder_tabselect {
+	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #99ccFF;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #666666;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+	background-image: url(/software/images/tabselect.png);
+	background-repeat: repeat-x;
+	text-align: center;
+}
+.tableborder_tabunselect {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #5ba1e6;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCCCCC;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	background-image: url(/software/images/tabunselect.png);
+	background-repeat: repeat-x;
+	text-align: center;
+}
+.tab_padding {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+
+/* --screen_color.css-- */
+/* 色指定用 CSS Document */
+/*すべてクラス（.）で指定*/
+
+.background_White {
+	background-color: #FFFFFF;
+}
+
+.background_Silver {
+	background-color: #c0c0c0;
+}
+
+.background_SlateGray {
+	background-color: #708090;
+}
+
+.background_LightSlateGrey {
+	background-color: #778899;
+}
+ 
+ .background_LightGrey {
+	background-color: #D3D3D3;
+}
+
+ .background_Gainsboro {
+	background-color: #DCDCDC;
+}
+
+ .background_DarkGray {
+	background-color: #A9A9A9;
+}
+
+ .background_LightSteelBlue {
+	background-color: #B0C4DE;
+}
+
+ .background_menubar {
+	background-color: #666666;
+}
+
+/*====================ブラウザ対応color name=========================*/
+.bcn_White {
+	color: #FFFFFF;
+}
+.bcn_Snow {
+	color: #FFFAFA;
+}
+
+.bcn_GhostWhite {
+	color: #F8F8FF;
+}
+.bcn_Ivory {
+	color: #FFFFF0;
+}
+.bcn_MintCream {
+	color: #F5FFFA;
+}
+.bcn_Azure {
+	color: #F0FFFF;
+}
+.bcn_FloralWhite {
+	color: #FFFAF0;
+}
+.bcn_AliceBlue {
+	color: #F0F8FF;
+}
+.bcn_LavenderBlush {
+	color: #FFF0F5;
+}
+.bcn_Seashell {
+	color: #FFF5EE;
+}
+.bcn_WhiteSmoke {
+	color: #F5F5F5;
+}
+.bcn_Honeydew {
+	color: #F0FFF0;
+}
+.bcn_LightYellow {
+	color: #FFFFE0;
+}
+.bcn_LightCyan {
+	color: #E0FFFF;
+}
+.bcn_OldLace {
+	color: #FDF5E6;
+}
+.bcn_Cornsilk {
+	color: #FFF8DC;
+}
+.bcn_Linen {
+	color: #FAF0E6;
+}
+.bcn_LemonChiffon {
+	color: #FFFACD;
+}
+.bcn_LightGoldenrodYellow {
+	color: #FAFAD2;
+}
+.bcn_Beige {
+	color: #F5F5DC;
+}
+.bcn_Lavender {
+	color: #E6E6FA;
+}
+.bcn_MistyRose {
+	color: #FFE4E1;
+}
+.bcn_PapayaWhip {
+	color: #FFEFD5;
+}
+.bcn_AntiqueWhite {
+	color: #FAEBD7;
+}
+.bcn_BlanchedAlmond {
+	color: #FFEBCD;
+}
+.bcn_Bisque {
+	color: #FFE4C4;
+}
+.bcn_Moccasin {
+	color: #FFE4B5;
+}
+.bcn_Gainsboro {
+	color: #DCDCDC;
+}
+.bcn_PeachPuff {
+	color: #FFDAB9;
+}
+.bcn_PaleTurquoise {
+	color: #AFEEEE;
+}
+.bcn_NavajoWhite {
+	color: #FFDEAD;
+}
+.bcn_Pink {
+	color: #FFC0CB;
+}
+.bcn_Wheat {
+	color: #F5DEB3;
+}
+.bcn_PaleGoldenrod {
+	color: #EEE8AA;
+}
+.bcn_LightGrey {
+	color: #D3D3D3;
+}
+.bcn_LightPink {
+	color: #FFB6C1;
+}
+.bcn_PowderBlue {
+	color: #B0E0E6;
+}
+.bcn_Thistle {
+	color: #D8BFD8;
+}
+.bcn_LightBlue {
+	color: #ADD8E6;
+}
+.bcn_Khaki {
+	color: #F0E68C;
+}
+.bcn_Violet {
+	color: #EE82EE;
+}
+.bcn_Plum {
+	color: #DDA0DD;
+}
+.bcn_LightSteelBlue {
+	color: #B0C4DE;
+}
+.bcn_Aquamarine {
+	color: #7FFFD4;
+}
+.bcn_LightSkyBlue {
+	color: #87CEFA;
+}
+.bcn_Silver {
+	color: #C0C0C0;
+}
+.bcn_SkyBlue {
+	color: #87CEEB;
+}
+.bcn_PaleGreen {
+	color: #98FB98;
+}
+.bcn_Orchid {
+	color: #DA70D6;
+}
+.bcn_Burlywood {
+	color: #DEB887;
+}
+.bcn_HotPink {
+	color: #FF69B4;
+}
+.bcn_LightSalmon {
+	color: #FFA07A;
+}
+.bcn_Tan {
+	color: #D2B48C;
+}
+.bcn_LightGreen {
+	color: #90EE90;
+}
+.bcn_Yellow {
+	color: #FFFF00;
+}
+.bcn_Fuchsia {
+	color: #FF00FF;
+}
+.bcn_Magenta {
+	color: #FF00FF;
+}
+.bcn_Aqua {
+	color: #00FFFF;
+}
+.bcn_Cyan {
+	color: #00FFFF;
+}
+.bcn_DarkGray {
+	color: #A9A9A9;
+}
+.bcn_DarkSalmon {
+	color: #E9967A;
+}
+.bcn_SandyBrown {
+	color: #F4A460;
+}
+.bcn_LightCoral {
+	color: #F08080;
+}
+.bcn_Turquoise {
+	color: #40E0D0;
+}
+.bcn_Salmon {
+	color: #FA8072;
+}
+.bcn_CornflowerBlue {
+	color: #6495ED;
+}
+.bcn_MediumTurquoise {
+	color: #48D1CC;
+}
+.bcn_MediumOrchid {
+	color: #BA55D3;
+}
+.bcn_DarkKhaki {
+	color: #BDB76B;
+}
+.bcn_PaleVioletRed {
+	color: #DB7093;
+}
+.bcn_MediumPurple {
+	color: #9370DB;
+}
+.bcn_MediumAquamarine {
+	color: #66CDAA;
+}
+.bcn_GreenYellow {
+	color: #ADFF2F;
+}
+.bcn_RosyBrown {
+	color: #BC8F8F;
+}
+.bcn_DarkSeaGreen {
+	color: #8FBC8F;
+}
+.bcn_Gold {
+	color: #FFD700;
+}
+.bcn_MediumSlateBlue {
+	color: #7B68EE;
+}
+.bcn_Coral {
+	color: #FF7F50;
+}
+.bcn_DeepSkyBlue {
+	color: #00BFFF;
+}
+.bcn_DodgerBlue {
+	color: #1E90FF;
+}
+.bcn_Tomato {
+	color: #FF6347;
+}
+.bcn_DeepPink {
+	color: #FF1493;
+}
+.bcn_Orange {
+	color: #FFA500;
+}
+.bcn_Goldenrod {
+	color: #DAA520;
+}
+.bcn_DarkTurquoise {
+	color: #00CED1;
+}
+.bcn_ CadetBlue{
+	color: #5F9EA0;
+}
+.bcn_YellowGreen {
+	color: #9ACD32;
+}
+.bcn_LightSlateGray {
+	color: #778899;
+}
+.bcn_DarkOrchid {
+	color: #9932CC;
+}
+.bcn_BlueViolet {
+	color: #8A2BE2;
+}
+.bcn_MediumSpringGreen {
+	color: #00FA9A;
+}
+.bcn_Peru {
+	color: #CD853F;
+}
+.bcn_SlateBlue {
+	color: #6A5ACD;
+}
+.bcn_DarkOrange {
+	color: #FF8C00;
+}
+.bcn_RoyalBlue {
+	color: #4169E1;
+}
+.bcn_IndianRed {
+	color: #CD5C5C;
+}
+.bcn_Gray {
+	color: #808080;
+}
+.bcn_SlateGray {
+	color: #708090;
+}
+.bcn_Chartreuse {
+	color: #7FFF00;
+}
+.bcn_SpringGreen {
+	color: #00FF7F;
+}
+.bcn_SteelBlue {
+	color: #4682B4;
+}
+.bcn_LightSeaGreen {
+	color: #20B2AA;
+}
+.bcn_LawnGreen {
+	color: #7CFC00;
+}
+.bcn_DarkViolet {
+	color: #9400D3;
+}
+.bcn_MediumVioletRed {
+	color: #C71585;
+}
+.bcn_MediumSeaGreen {
+	color: #3CB371;
+}
+.bcn_Chocolate {
+	color: #D2691E;
+}
+.bcn_DarkGoldenrod {
+	color: #B8860B;
+}
+.bcn_OrangeRed {
+	color: #FF4500;
+}
+.bcn_DimGray {
+	color: #696969;
+}
+.bcn_LimeGreen {
+	color: #32CD32;
+}
+.bcn_Crimson {
+	color: #DC143C;
+}
+.bcn_Sienna {
+	color: #A0522D;
+}
+.bcn_OliveDrab {
+	color: #6B8E23;
+}
+.bcn_DarkMagenta {
+	color: #8B008B;
+}
+.bcn_DarkCyan {
+	color: #008B8B;
+}
+.bcn_DarkSlateBlue {
+	color: #483D8B;
+}
+.bcn_SeaGreen {
+	color: #2E8B57;
+}
+.bcn_Olive {
+	color: #808000;
+}
+.bcn_Purple {
+	color: #800080;
+}
+.bcn_Teal {
+	color: #008080;
+}
+.bcn_Red {
+	color: #FF0000;
+}
+.bcn_Lime {
+	color: #00FF00;
+}
+.bcn_Blue {
+	color: #0000FF;
+}
+.bcn_Brown {
+	color: #A52A2A;
+}
+.bcn_Firebrick {
+	color: #B22222;
+}
+.bcn_DarkOliveGreen {
+	color: #556B2F;
+}
+.bcn_SaddleBrown {
+	color: #8B4513;
+}
+.bcn_ForestGreen {
+
+	color: #228B22;
+}
+.bcn_Indigo {
+	color: #4B0082;
+}
+.bcn_DarkSlateGray {
+	color: #2F4F4F;
+}
+.bcn_MediumBlue {
+	color: #0000CD;
+}
+.bcn_MidnightBlue {
+	color: #191970;
+}
+.bcn_DarkRed {
+	color: #8B0000;
+}
+.bcn_DarkBlue {
+	color: #00008B;
+}
+.bcn_Maroon {
+	color: #800000;
+}
+.bcn_Green {
+	color: #008000;
+}
+.bcn_Navy {
+	color: #000080;
+}
+.bcn_DarkGreen {
+	color: #006400;
+}
+.bcn_Black {
+	color: #000000;
+}
+/*=====================反転=========================*/
+
+.bcnrev_White {
+	background-color: #FFFFFF;
+}
+.bcnrev_Snow {
+	background-color: #FFFAFA;
+}
+
+.bcnrev_GhostWhite {
+	background-color: #F8F8FF;
+}
+.bcnrev_Ivory {
+	background-color: #FFFFF0;
+}
+.bcnrev_MintCream {
+	background-color: #F5FFFA;
+}
+.bcnrev_Azure {
+	background-color: #F0FFFF;
+}
+.bcnrev_FloralWhite {
+	background-color: #FFFAF0;
+}
+.bcnrev_AliceBlue {
+	background-color: #F0F8FF;
+}
+.bcnrev_LavenderBlush {
+	background-color: #FFF0F5;
+}
+.bcnrev_Seashell {
+	background-color: #FFF5EE;
+}
+.bcnrev_WhiteSmoke {
+	background-color: #F5F5F5;
+}
+.bcnrev_Honeydew {
+	background-color: #F0FFF0;
+}
+.bcnrev_LightYellow {
+	background-color: #FFFFE0;
+}
+.bcnrev_LightCyan {
+	background-color: #E0FFFF;
+}
+.bcnrev_OldLace {
+	background-color: #FDF5E6;
+}
+.bcnrev_Cornsilk {
+	background-color: #FFF8DC;
+}
+.bcnrev_Linen {
+	background-color: #FAF0E6;
+}
+.bcnrev_LemonChiffon {
+	background-color: #FFFACD;
+}
+.bcnrev_LightGoldenrodYellow {
+	background-color: #FAFAD2;
+}
+.bcnrev_Beige {
+	background-color: #F5F5DC;
+}
+.bcnrev_Lavender {
+	background-color: #E6E6FA;
+}
+.bcnrev_MistyRose {
+	background-color: #FFE4E1;
+}
+.bcnrev_PapayaWhip {
+	background-color: #FFEFD5;
+}
+.bcnrev_AntiqueWhite {
+	background-color: #FAEBD7;
+}
+.bcnrev_BlanchedAlmond {
+	background-color: #FFEBCD;
+}
+.bcnrev_Bisque {
+	background-color: #FFE4C4;
+}
+.bcnrev_Moccasin {
+	background-color: #FFE4B5;
+}
+.bcnrev_Gainsboro {
+	background-color: #DCDCDC;
+}
+.bcnrev_PeachPuff {
+	background-color: #FFDAB9;
+}
+.bcnrev_PaleTurquoise {
+	background-color: #AFEEEE;
+}
+.bcnrev_NavajoWhite {
+	background-color: #FFDEAD;
+}
+.bcnrev_Pink {
+	background-color: #FFC0CB;
+}
+.bcnrev_Wheat {
+	background-color: #F5DEB3;
+}
+.bcnrev_PaleGoldenrod {
+	background-color: #EEE8AA;
+}
+.bcnrev_LightGrey {
+	background-color: #D3D3D3;
+}
+.bcnrev_LightPink {
+	background-color: #FFB6C1;
+}
+.bcnrev_PowderBlue {
+	background-color: #B0E0E6;
+}
+.bcnrev_Thistle {
+	background-color: #D8BFD8;
+}
+.bcnrev_LightBlue {
+	background-color: #ADD8E6;
+}
+.bcnrev_Khaki {
+	background-color: #F0E68C;
+}
+.bcnrev_Violet {
+	background-color: #EE82EE;
+}
+.bcnrev_Plum {
+	background-color: #DDA0DD;
+}
+.bcnrev_LightSteelBlue {
+	background-color: #B0C4DE;
+}
+.bcnrev_Aquamarine {
+	background-color: #7FFFD4;
+}
+.bcnrev_LightSkyBlue {
+	background-color: #87CEFA;
+}
+.bcnrev_Silver {
+	background-color: #C0C0C0;
+}
+.bcnrev_SkyBlue {
+	background-color: #87CEEB;
+}
+.bcnrev_PaleGreen {
+	background-color: #98FB98;
+}
+.bcnrev_Orchid {
+	color: #FFFFFF;
+	background-color: #DA70D6;
+}
+.bcnrev_Burlywood {
+	color: #FFFFFF;
+	background-color: #DEB887;
+}
+.bcnrev_HotPink {
+	color: #FFFFFF;
+	background-color: #FF69B4;
+}
+.bcnrev_LightSalmon {
+	background-color: #FFA07A;
+}
+.bcnrev_Tan {
+	background-color: #D2B48C;
+}
+.bcnrev_LightGreen {
+	background-color: #90EE90;
+}
+.bcnrev_Yellow {
+	background-color: #FFFF00;
+}
+.bcnrev_Fuchsia {
+	color: #FFFFFF;
+	background-color: #FF00FF;
+}
+.bcnrev_Magenta {
+	color: #FFFFFF;
+	background-color: #FF00FF;
+}
+.bcnrev_Aqua {
+	background-color: #00FFFF;
+}
+.bcnrev_Cyan {
+	background-color: #00FFFF;
+}
+.bcnrev_DarkGray {
+	color: #FFFFFF;
+	background-color: #A9A9A9;
+}
+.bcnrev_DarkSalmon {
+	color: #FFFFFF;
+	background-color: #E9967A;
+}
+.bcnrev_SandyBrown {
+	background-color: #F4A460;
+}
+.bcnrev_LightCoral {
+	background-color: #F08080;
+}
+.bcnrev_Turquoise {
+	background-color: #40E0D0;
+}
+.bcnrev_Salmon {
+	background-color: #FA8072;
+}
+.bcnrev_CornflowerBlue {
+	color: #FFFFFF;
+	background-color: #6495ED;
+}
+.bcnrev_MediumTurquoise {
+	background-color: #48D1CC;
+}
+.bcnrev_MediumOrchid {
+	color: #FFFFFF;
+	background-color: #BA55D3;
+}
+.bcnrev_DarkKhaki {
+	color: #FFFFFF;
+	background-color: #BDB76B;
+}
+.bcnrev_PaleVioletRed {
+	background-color: #DB7093;
+}
+.bcnrev_MediumPurple {
+	color: #FFFFFF;
+	background-color: #9370DB;
+}
+.bcnrev_MediumAquamarine {
+	color: #FFFFFF;
+	background-color: #66CDAA;
+}
+.bcnrev_GreenYellow {
+	background-color: #ADFF2F;
+}
+.bcnrev_RosyBrown {
+	background-color: #BC8F8F;
+}
+.bcnrev_DarkSeaGreen {
+	color: #FFFFFF;
+	background-color: #8FBC8F;
+}
+.bcnrev_Gold {
+	background-color: #FFD700;
+}
+.bcnrev_MediumSlateBlue {
+	color: #FFFFFF;
+	background-color: #7B68EE;
+}
+.bcnrev_Coral {
+	color: #FFFFFF;
+	background-color: #FF7F50;
+}
+.bcnrev_DeepSkyBlue {
+	color: #FFFFFF;
+	background-color: #00BFFF;
+}
+.bcnrev_DodgerBlue {
+	color: #FFFFFF;
+	background-color: #1E90FF;
+}
+.bcnrev_Tomato {
+	color: #FFFFFF;
+	background-color: #FF6347;
+}
+.bcnrev_DeepPink {
+	color: #FFFFFF;
+	background-color: #FF1493;
+}
+.bcnrev_Orange {
+	color: #FFFFFF;
+	background-color: #FFA500;
+}
+.bcnrev_Goldenrod {
+	color: #FFFFFF;
+	background-color: #DAA520;
+}
+.bcnrev_DarkTurquoise {
+	color: #FFFFFF;
+	background-color: #00CED1;
+}
+.bcnrev_ CadetBlue{
+	color: #FFFFFF;
+	background-color: #5F9EA0;
+}
+.bcnrev_YellowGreen {
+	background-color: #9ACD32;
+}
+.bcnrev_LightSlateGray {
+	background-color: #778899;
+}
+.bcnrev_DarkOrchid {
+	color: #FFFFFF;
+	background-color: #9932CC;
+}
+.bcnrev_BlueViolet {
+	color: #FFFFFF;
+	background-color: #8A2BE2;
+}
+.bcnrev_MediumSpringGreen {
+	background-color: #00FA9A;
+}
+.bcnrev_Peru {
+	color: #FFFFFF;
+	background-color: #CD853F;
+}
+.bcnrev_SlateBlue {
+	color: #FFFFFF;
+	background-color: #6A5ACD;
+}
+.bcnrev_DarkOrange {
+	color: #FFFFFF;
+	background-color: #FF8C00;
+}
+.bcnrev_RoyalBlue {
+	color: #FFFFFF;
+	background-color: #4169E1;
+}
+.bcnrev_IndianRed {
+	color: #FFFFFF;
+	background-color: #CD5C5C;
+}
+.bcnrev_Gray {
+	color: #FFFFFF;
+	background-color: #808080;
+}
+.bcnrev_SlateGray {
+	color: #FFFFFF;
+	background-color: #708090;
+}
+.bcnrev_Chartreuse {
+	background-color: #7FFF00;
+}
+.bcnrev_SpringGreen {
+	background-color: #00FF7F;
+}
+.bcnrev_SteelBlue {
+	color: #FFFFFF;
+	background-color: #4682B4;
+}
+.bcnrev_LightSeaGreen {
+	background-color: #20B2AA;
+}
+.bcnrev_LawnGreen {
+	background-color: #7CFC00;
+}
+.bcnrev_DarkViolet {
+	color: #FFFFFF;
+	background-color: #9400D3;
+}
+.bcnrev_MediumVioletRed {
+	color: #FFFFFF;
+	background-color: #C71585;
+}
+.bcnrev_MediumSeaGreen {
+	color: #FFFFFF;
+	background-color: #3CB371;
+}
+.bcnrev_Chocolate {
+	color: #FFFFFF;
+	background-color: #D2691E;
+}
+.bcnrev_DarkGoldenrod {
+	color: #FFFFFF;
+	background-color: #B8860B;
+}
+.bcnrev_OrangeRed {
+	color: #FFFFFF;
+	background-color: #FF4500;
+}
+.bcnrev_DimGray {
+	color: #FFFFFF;
+	background-color: #696969;
+}
+.bcnrev_LimeGreen {
+	background-color: #32CD32;
+}
+.bcnrev_Crimson {
+	color: #FFFFFF;
+	background-color: #DC143C;
+}
+.bcnrev_Sienna {
+	color: #FFFFFF;
+	background-color: #A0522D;
+}
+.bcnrev_OliveDrab {
+	color: #FFFFFF;
+	background-color: #6B8E23;
+}
+.bcnrev_DarkMagenta {
+	color: #FFFFFF;
+	background-color: #8B008B;
+}
+.bcnrev_DarkCyan {
+	color: #FFFFFF;
+	background-color: #008B8B;
+}
+.bcnrev_DarkSlateBlue {
+	color: #FFFFFF;
+	background-color: #483D8B;
+}
+.bcnrev_SeaGreen {
+	color: #FFFFFF;
+	background-color: #2E8B57;
+}
+.bcnrev_Olive {
+	color: #FFFFFF;
+	background-color: #808000;
+}
+.bcnrev_Purple {
+	color: #FFFFFF;
+	background-color: #800080;
+}
+.bcnrev_Teal {
+	color: #FFFFFF;
+	background-color: #008080;
+}
+.bcnrev_Red {
+	color: #FFFFFF;
+	background-color: #FF0000;
+}
+.bcnrev_Lime {
+	background-color: #00FF00;
+}
+.bcnrev_Blue {
+	color: #FFFFFF;
+	background-color: #0000FF;
+}
+.bcnrev_Brown {
+	color: #FFFFFF;
+	background-color: #A52A2A;
+}
+.bcnrev_Firebrick {
+	color: #FFFFFF;
+	background-color: #B22222;
+}
+.bcnrev_DarkOliveGreen {
+	color: #FFFFFF;
+	background-color: #556B2F;
+}
+.bcnrev_SaddleBrown {
+	color: #FFFFFF;
+	background-color: #8B4513;
+}
+.bcnrev_ForestGreen {
+	color: #FFFFFF;
+	background-color: #228B22;
+}
+.bcnrev_Indigo {
+	color: #FFFFFF;
+	background-color: #4B0082;
+}
+.bcnrev_DarkSlateGray {
+	color: #FFFFFF;
+	background-color: #2F4F4F;
+}
+.bcnrev_MediumBlue {
+	color: #FFFFFF;
+	background-color: #0000CD;
+}
+.bcnrev_MidnightBlue {
+	color: #FFFFFF;
+	background-color: #191970;
+}
+.bcnrev_DarkRed {
+	color: #FFFFFF;
+	background-color: #8B0000;
+}
+.bcnrev_DarkBlue {
+	color: #FFFFFF;
+	background-color: #00008B;
+}
+.bcnrev_Maroon {
+	color: #FFFFFF;
+	background-color: #800000;
+}
+.bcnrev_Green {
+	color: #FFFFFF;
+	background-color: #008000;
+}
+.bcnrev_Navy {
+	color: #FFFFFF;
+	background-color: #000080;
+}
+.bcnrev_DarkGreen {
+	color: #FFFFFF;
+	background-color: #006400;
+}
+.bcnrev_Black {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+/*=====================色追加=========================*/
+.bcnrev_yworks {
+	color: #FFFFFF;
+	background-color: #336699;
+}
+.bcnrev_yworks2 {
+	color: #FFFFFF;
+	background-color: #6699CC;
+}
+.bcnrev_tecplotfocus {
+	color: #FFFFFF;
+	background-color: #d68110;
+}
+.bcnrev_tecplot360 {
+	color: #FFFFFF;
+	background-color: #46a6de;
+}
+
+/*==============Windows==================*/
+.wincolor_threedface {
+	background-color: threedface;
+}
+
+.wincolor_windowframe {
+	background-color: windowframe;
+}
+
+.font_small { 
+	font-family: "VL Pゴシック", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size:80%;
+	line-height: 130%;
+}
+
+.font_smallx { 
+	font-family: "VL Pゴシック", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-size:70%;
+	line-height: 130%;
+}
+.underline {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #99CCFF;
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+}
+
+/* --lightbox.css-- */
+#lightbox{
+	background-color:#fff;
+	padding: 10px;
+	border-bottom: 2px solid #666;
+	border-right: 2px solid #666;
+	}
+#lightboxDetails{
+	font-size: 0.8em;
+	padding-top: 0.4em;
+	}	
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; }
+#closeButton{ top: 0px; right: 0px; }
+
+#lightbox img{ border: none; /*clear: both;*/} 
+#overlay img{ border: none; }
+
+#overlay{ background-image: url(overlay.png); }
+
+* html #overlay{
+	background-color: #333;
+	back\ground-color: transparent;
+	background-image: url(/images/blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/overlay.png", sizingMethod="scale");
+	}
+	
+
+/*==========ソフトウェア・サブタイトル=================*/
+#subtitle {
+	font-family: "メイリオ", "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	font-size: 12px;
+	line-height: 130%;
+	font-weight: bold;
+/*	color: #FFFFFF;
+	background-color: #0099CC;*/
+/*	↑contents の ID には、色を指定しない。color.css 内で別途 class で指定する。*/
+	text-align: center;
+	margin: 0px;
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+}
+
+
+/*==========ソフトウェア・メーカーリンク=================*/
+#maker_link {
+	font-size: 10px;
+	line-height: 120%;
+	text-align: right;
+	font-family: "VL Pゴシック", "メイリオ", "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	margin-top: 20px;
+}
+#content_title {
+	font-size: 80%;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 2px;
+}
+
+/*aaa*/
+/*===========================サポート Start==========================*/
+#support_head {
+	font-family: "VL Pゴシック", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+#support_title {
+	font-size: 90%;
+	height: 130%;
+}
+
+#support_lead {
+	font-size: 80%;
+	height: 130%;
+}
+
+#support_contentstitle {
+	font-size: 80%;
+	height: 130%;
+}
+
+#update {
+	font-size: 80%;
+	height: 130%;
+	text-align: right;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+}
+code {
+	font-family: "Courier New", "Courier", "Monospace";
+}
+
+.jp_mono {
+	font-family: "VL ゴシック", "Osaka−等幅", "ＭＳ ゴシック" ;
+}
+
+/*サポート リファレンス 章の番号*/
+.drop {
+	font-size: 3em;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #000000;
+	float: left;
+	font-family: "Times New Roman", Times, serif;
+	padding-right: 0.3em;
+	padding-left: 0.3em;
+	margin-right: 0.3em;
+}
+.drop2 {
+	font-size: 3em;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #000000;
+	float: left;
+	font-family: "Times New Roman", Times, serif;
+	padding-right: 0.1em;
+	padding-left: 0.1em;
+	margin-right: 0.3em;
+}
+/*サポート リファレンス用 END*/
+
+
+/*サポート END*/
+
+
+
+
+/*===========================新webページ用==========================*/
+
+/*===========================トップページ==========================*/
+
+#banner {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+#content_left {
+	float: left;
+	width: 75%;
+	margin-top: 15px;
+	color: #333333;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+#content_left a { text-decoration: none; }
+#content_left a:link { color: #333333; }
+#content_left a:visited { color: #333333; }
+#content_left a:hover  { color: #006699;
+background-color: #ffd78c; }
+
+#content_right {
+	float: left;
+	width: 24%;
+	margin-top: 15px;
+	color: #333333;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#content_right a { text-decoration: none; }
+#content_right a:link { color: #333333; }
+#content_right a:visited { color: #333333; }
+#content_right a:hover  { color: #006699;
+background-color: #ffd78c; }
+#foot {
+}
+
+
+#guide_menu {
+	margin-right: auto;
+	margin-left: auto;
+	width: 960px;
+	height: 42px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#guide_menu ul {
+	margin: 0px;
+	padding: 0px;
+}
+#guide_menu li {
+	float: left;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: 0;
+	border-right-style: 0;
+	border-bottom-style: 0;
+	border-left-style: 0;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#menu_1 {
+	float: left;
+	width: 345px;
+	border: thin solid #CCCCCC;
+	list-style-image: url(/images/menuli_1_s.jpg);
+	padding-bottom: 10px;
+	height: 260px;
+}
+#menu_2 {
+	float: left;
+	width: 345px;
+	border: thin solid #CCCCCC;
+	list-style-image: url(/images/menuli_2_s.jpg);
+	padding-bottom: 10px;
+	margin-left: 15px;
+	height: 260px;
+}
+#menu_3 {
+	float: left;
+	width: 345px;
+	border: thin solid #CCCCCC;
+	list-style-image: url(/images/menuli_3_s.jpg);
+	padding-bottom: 10px;
+	height: 180px;
+	margin-top: 15px;
+}
+#menu_4 {
+	float: left;
+	width: 345px;
+	border: thin solid #CCCCCC;
+	list-style-image: url(/images/menuli_4_s.jpg);
+	padding-bottom: 10px;
+	height: 180px;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+#company {
+	float: left;
+	width: 230px;
+	border: thin solid #CCCCCC;
+	padding-bottom: 10px;
+	height: 260px;
+	margin-bottom: 15px;
+	list-style-image: url(/images/menuli_5_s.jpg);
+}
+#contactus {
+	float: left;
+	width: 230px;
+	border: thin solid #CCCCCC;
+	padding-bottom: 10px;
+	height: 180px;
+	margin-bottom: 15px;
+	list-style-image: url(/images/menuli_8_s.jpg);
+}
+#group{
+	float: left;
+	width: 230px;
+	border: thin solid #CCCCCC;
+	padding-bottom: 10px;
+	height: 180px;
+	margin-top: 10px;
+	list-style-image: url(/images/menuli_5_s.jpg);
+	font-size: 85%;
+}
+#group ul {
+	margin: 0 0 0 2em;
+	padding: 0 0 0 0em;
+}
+#menutitle_1 {
+	background-image: url(/images/menu1_title.jpg);
+	margin-bottom: 5px;
+}
+#menutitle_2 {
+	background-image: url(/images/menu1_title.jpg);
+	margin-bottom: 5px;
+}
+#menutitle_3 {
+	background-image: url(/images/menu1_title.jpg);
+	margin-bottom: 5px;
+}
+#menutitle_4 {
+	background-image: url(/images/menu1_title.jpg);
+	margin-bottom: 10px;
+}
+#menutitle_5 {
+	margin-bottom: 5px;
+}
+#menutitle_6 {
+	margin-bottom: 10px;
+}
+#menutitle_7 {
+	margin-bottom: 5px;
+}
+#info {
+	float: left;
+	width: 710px;
+	margin-top: 25px;
+	list-style-image: url(/images/menuli_6_s.jpg);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	padding-bottom: 10px;
+}
+#infotitle {
+	height: 34px;
+	width: 710px;
+	margin-bottom: 10px;
+	background-image: url(/images/info1_2_back.jpg);
+	background-repeat: no-repeat;
+}
+#info_all_rss {
+	margin-right: 10px;
+	margin-top: auto;
+	float: right;
+	margin-left: auto;
+}
+#top_banner {
+	float: left;
+	width: 227px;
+	margin-bottom: 5px;
+}
+
+#privacy {
+	width: 227px;
+	float: left;
+	margin-top: 20px;
+}
+#infotitle_text {
+	width: 200px;
+	height: 34px;
+	float: left;
+}
+
+
+
+/*===========================インフォページ==========================*/
+
+#info_left {
+	float: left;
+	width: 25%;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+#info_right {
+	float: left;
+	width: 72%;
+	margin-left: 5px;
+	padding-left: 15px;
+	padding-top: 10px;
+	margin-top: 5px;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+}
+#info_title {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+.info_menu_list {
+	margin-bottom: 5px;
+	color: #333333;
+	list-style-image: url(/images/menuli_6.jpg);
+	width: 225px;
+	padding-right: 5px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+
+/*===========================ソフトウェアページ==========================*/
+
+#soft_left {
+	float: left;
+	width: 25%;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+#soft_right {
+	float: left;
+	width: 72%;
+	margin-left: 5px;
+	padding-left: 15px;
+	padding-top: 10px;
+	margin-top: 5px;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+}
+#soft_right_text {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+#soft_title {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.soft_menu_01 {
+	margin-bottom: 5px;
+	color: #333333;
+	list-style-image: url(/software/images/menuli_1.jpg);
+	width: 230px;
+	padding-right: 5px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.soft_menu_01 li {
+	line-height: 140%;
+	}
+.soft_menu_01 li ul li {
+	font-size: 100%;
+	line-height: 140%;
+	margin: 0 0 0 -1.2em;
+	padding: 0;
+	list-style-image: url(/software/images/menuli_1.jpg);
+	}
+.soft_menu_01 li ul li ul li {
+	font-size: 95%;
+	line-height: 140%;
+	margin: 0 0 0 -1.2em;
+	padding: 0;
+	list-style-image: url(/software/images/menuli_1_s.jpg);
+	}
+.soft_menu_02 {
+	margin-bottom: 5px;
+	color: #333333;
+	list-style-image: url(/software/images/menuli_7.jpg);
+	width: 230px;
+	padding-right: 5px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.soft_menu_02 li {
+	line-height: 140%;
+	}
+.soft_menu_02 li ul li {
+	font-size: 100%;
+	line-height: 140%;
+	margin: 0 0 0 -1.2em;
+	padding: 0;
+	list-style-image: url(/software/images/menuli_7.jpg);
+	}
+.soft_menu_02 li ul li ul li {
+	font-size: 95%;
+	line-height: 140%;
+	margin: 0 0 0 -1.2em;
+	padding: 0;
+	list-style-image: url(/software/images/menuli_7_s.jpg);
+	}
+.soft_menu_select {
+	color: #DC143C !important; 
+	font-weight: bold;
+}
+#caution {
+	font-size: 10px;
+	line-height: 120%;
+	text-align: right;
+	font-family: "VL Pゴシック", "メイリオ", "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+.pickup {
+	width: 220px;
+	font-size: 70%;
+	background-color: #EEEEEE;
+	border: thin dotted #AAAAAA;
+	color: #333333;
+	font-family: "VL Pゴシック", 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+	font-weight: bold;
+	padding: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 2px;
+}
+
+
+
+
+/*===========================ソリューションページ==========================*/
+
+#sol_left {
+	float: left;
+	width: 25%;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+#sol_right {
+	float: left;
+	width: 72%;
+	margin-left: 5px;
+	padding-left: 15px;
+	padding-top: 10px;
+	margin-top: 5px;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+}
+#sol_title {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.sol_menu_list {
+	margin-bottom: 5px;
+	color: #333333;
+	list-style-image: url(/solution/images/sol_menuli_2.png);
+	width: 225px;
+	padding-right: 5px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+
+<!-- 旧見積請求ボタン用 -->
+#inquiry {
+	margin-left: 2px;
+	margin-bottom: 8px;
+	border: 2px solid #CCCCCC;
+	color: #FFFFFF;
+	width: 220px;
+	padding-right: 5px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: small;
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #54CECE 0%, #00BFBF 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #54CECE 0%, #00BFBF 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #54CECE 0%, #00BFBF 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #54CECE), color-stop(1, #00BFBF));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #54CECE 0%, #00BFBF 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #54CECE 0%, #00BFBF 100%);
+}
+<!-- 旧見積請求ボタン用　ここまで -->
+
+
+/*===========================セミナー／事例ページ==========================*/
+
+#seminar_case_left {
+	float: left;
+	width: 25%;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+#seminar_case_right {
+	float: left;
+	width: 72%;
+	margin-left: 5px;
+	padding-left: 15px;
+	padding-top: 10px;
+	margin-top: 5px;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+}
+#seminar_case_title {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.seminar_case_menu_list {
+	margin-bottom: 5px;
+	color: #333333;
+	list-style-image: url(/seminar_case/images/menuli_3.jpg);
+	width: 225px;
+	padding-right: 5px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+
+
+/*===========================サポートページ==========================*/
+
+#support_left {
+	float: left;
+	width: 25%;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+#support_right {
+	float: left;
+	width: 72%;
+	margin-left: 5px;
+	padding-left: 15px;
+	padding-top: 10px;
+	margin-top: 5px;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+}
+/*#support_title {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}*/
+.support_menu_list {
+	margin-bottom: 5px;
+	color: #333333;
+	list-style-image: url(/images/menuli_4.jpg);
+	width: 225px;
+	padding-right: 5px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+#eng2 {
+	display: none;
+	background-color: #CCCCCC;
+}
+
+
+/*===========================会社情報ページ==========================*/
+
+#corporate_left {
+	float: left;
+	width: 25%;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+#corporate_right {
+	float: left;
+	width: 72%;
+	margin-left: 5px;
+	padding-left: 15px;
+	padding-top: 10px;
+	margin-top: 5px;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+}
+#corporate_title {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+.corporate_menu_list {
+	margin-bottom: 5px;
+	color: #333333;
+	list-style-image: url(/corporate/images/menuli_5.jpg);
+	width: 225px;
+	padding-right: 5px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+
+
+
+/*===========================お問い合わせページ==========================*/
+
+#contactus_left {
+	float: left;
+	width: 25%;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+#contactus_right {
+	float: left;
+	width: 72%;
+	margin-left: 5px;
+	padding-left: 15px;
+	padding-top: 10px;
+	margin-top: 5px;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+}
+#contactus_title {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+.contactus_menu_list {
+	margin-bottom: 5px;
+	color: #333333;
+	list-style-image: url(/contactus/images/menuli_8.jpg);
+	width: 225px;
+	padding-right: 5px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+
+
+
+/*==========左メニュー関連（リンクの色など）=================*/
+#left_menu {
+	
+}
+#left_menu a { text-decoration: none; }
+#left_menu a:link { color: #333333; }
+#left_menu a:visited { color: #333333; }
+#left_menu a:hover  { color: #006699;
+background-color: #ffd78c; }
+
+#left_button_w {
+	
+}
+#left_button_w a { text-decoration: none; }
+#left_button_w a:link { color: #FFFFFF; }
+#left_button_w a:visited { color: #FFFFFF; }
+
+#left_button_g {
+	
+}
+#left_button_g a { text-decoration: none; }
+#left_button_g a:link { color: #555555; }
+#left_button_g a:visited { color: #555555; }
+
+
+
+
+
+/*==========カテゴリメニュー（右メニュー）=================*/
+.category {
+	margin-top: 20px;
+	margin-left: -15px;
+	margin-right: 15px;
+	color: #333333;
+	list-style-image: url(/software/images/menuli_7.jpg);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #DDDDDD;
+	list-style-position: inside;
+	font-weight: normal;
+}
+ul.category li {
+padding-bottom: 10px;
+}
+.category li ul li {
+	font-size: 95%;
+	line-height: 140%;
+	margin: 0 0 0 -1.2em;
+	padding: 0;
+	list-style-image: url(/images/menuli_7_s.jpg);
+	}
+.category a { text-decoration: none; }
+.category a:link { color: #333333; }
+.category a:visited { color: #333333; }
+.category a:hover  { color: #006699;
+background-color: #ffd78c; }
+
+
+
+/*==========左右分けないページ用=================*/
+.content_noleftmenu {
+	width: 73%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*==========その他=================*/
+#contents_main {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.pullquote {
+	color: #555555;
+	background-color: #EEEEEE;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: medium;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: double;
+	border-top-color: #999999;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	border-left-color: #999999;
+	padding: 5px;
+}
+
+.img_hover {
+    } 
+
+.rollover {
+    } 
+
+
+/*===========================印刷用=========================*/
+#head {display: none;
+}
