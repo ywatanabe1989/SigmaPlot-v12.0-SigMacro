@@ -1,6 +1,6 @@
 ## SigmaPlot v12.0 with SigMacro v1.1
 
-![SigMacro v1.0 Demo](./SigMacro%20v1.1/SigMacro_v1.0_demo.gif)
+![SigMacro v1.0 Demo](./SigMacro%20v1.2/SigMacro_v1.0_demo.gif)
 
 ## Prerequisite
 
